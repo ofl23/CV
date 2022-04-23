@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.6)  23 APR 2022 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.6)  23 APR 2022 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -814,12 +814,12 @@ LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <20.74> n
 ot available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
 n input line 38.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
 
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -827,7 +827,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (30.0pt too wide) in paragraph at lines 102--103
+Overfull \hbox (30.0pt too wide) in paragraph at lines 107--108
 [] 
  []
 
@@ -835,17 +835,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \end{document}
+l.159 \end{document}
                      [2] (./CV.aux)
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23764 strings out of 478994
- 447140 string characters out of 5858185
- 715144 words of memory out of 5000000
- 40858 multiletter control sequences out of 15000+600000
- 408063 words of font info for 45 fonts, out of 8000000 for 9000
+ 23766 strings out of 478994
+ 447173 string characters out of 5858185
+ 716144 words of memory out of 5000000
+ 40860 multiletter control sequences out of 15000+600000
+ 408668 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,5n,103p,1191b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
@@ -863,10 +863,10 @@ pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
 ublic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1000.pfb>
-Output written on CV.pdf (2 pages, 127910 bytes).
+Output written on CV.pdf (2 pages, 128062 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
