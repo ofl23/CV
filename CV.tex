@@ -1,5 +1,5 @@
 \documentclass[10.5pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
-\usepackage[margin=3cm]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage[top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{a4paper}                   		% ... or a4paper or a5paper or ... 
 \usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
@@ -12,23 +12,31 @@
 \usepackage{orcidlink}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontawesome5}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \titleformat*{\section}{\large\bfseries}
 \titlespacing*{\section}{0pt}{0.5\baselineskip}{0.1\baselineskip}
 \pagenumbering{gobble}
 \setlist{itemsep=0pt}
 
+\definecolor{Sectioncolour}{HTML}{4472C4}
 \definecolor{RGcolour}{HTML}{5ECDB0}
 \definecolor{LIcolour}{HTML}{2D64BC}
 \definecolor{Orcidcolour}{HTML}{AECD54}
 
-\begin{document}
+\let\oldheadrule\headrule% Copy \headrule into \oldheadrule
+\renewcommand{\headrule}{\color{Sectioncolour}\oldheadrule}% Add colour to \headrule
+\renewcommand{\headrulewidth}{0.8pt}
 
-\moveleft.5\hoffset\centerline{\Large\bf Oliver Long} % Your name at the top
+\chead{\color{Sectioncolour} \Large\bf Oliver Long}
+\lfoot{Updated \today.}
+
+\begin{document}
  
-\noindent\rule{\linewidth}{0.6pt}
- 
- \vspace{-3mm}
+%----------------------------------------------------------------------------------------
+%	ICONS
+%----------------------------------------------------------------------------------------
  
 \begin{center}
 \huge
@@ -46,76 +54,116 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section*{Education}
+{\color{Sectioncolour}
+\section*{Academic positions}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 
-\textbf{PhD in Mathematical Sciences}, University of Southampton \hfill Sep 2018 -- Present \\
+\textbf{EPSRC Doctoral Prize Research Fellow}, University of Southampton \hfill May 2022 -- Present \\
 \vspace{-5mm}
 \begin{itemize}
-\item Project title: Self-force in hyperbolic binary-black hole encounters.
-\item Supervisor: Prof.\ Leor Barack
-\item Project involves the modelling of hyperbolic orbits of binary black holes with back-reaction in the extreme-mass-ratio limit using perturbation theory. 
+\item Research: Modelling of hyperbolic orbits of binary black holes with back-reaction in the extreme-mass-ratio limit using perturbation theory. 
 \end{itemize}
 
-\textbf{MPhys(Hons) in Physics}, The University of Manchester \hfill Sep 2014 -- Jun 2018 \\
+\textbf{Research Assistant}, University of Southampton \hfill Jan 2022 -- Mar 2022 \\
 \vspace{-5mm}
 \begin{itemize}
-\item First-class honours with an average of $80.4\%$.
-\item Full range of modules covering all areas of physics including Gravitation, Advanced Statistical Physics, The Early Universe, Quantum Field Theory and Electrodynamics.
-\item Master's project involving using Markov chain Monte Carlo methods on the power spectra of the cosmic microwave background to resolve various tensions in the data by using different cosmological models.
+\item Research: Modelling of hyperbolic orbits of binary black holes with back-reaction in the extreme-mass-ratio limit using perturbation theory. 
+\end{itemize}
+
+{\color{Sectioncolour}
+\section*{Education}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
+
+\textbf{PhD in Mathematical Sciences}, University of Southampton \hfill Sep 2018 -- April 2022 \\
+\vspace{-5mm}
+\begin{itemize}
+\item Final degree grade: Pass without corrections.
+\item Project title: Self-force in hyperbolic black hole encounters.
+\item Supervisor: Prof.\ Leor Barack.
+\item Project: Modelling of hyperbolic orbits of binary black holes with back-reaction in the extreme-mass-ratio limit using perturbation theory. 
+\item Teaching: Running of undergraduate problem classes and helping with assessment.
+\end{itemize}
+
+\textbf{MPhys in Physics}, The University of Manchester \hfill Sep 2014 -- Jun 2018 \\
+\vspace{-5mm}
+\begin{itemize}
+\item Final degree grade: First-class honours with an average of $80.4\%$.
+\item Modules: Gravitation, The Early Universe, Quantum Field Theory,  Electrodynamics, etc.
+\item Master's project: Using Markov chain Monte Carlo methods on power spectra of the cosmic microwave background to resolve various tensions in the data through the use of different cosmological models.
 \end{itemize} 
 
 \textbf{A levels}, Hereford Sixth Form College \hfill Sep 2012 -- Jun 2014 \\
 \vspace{-5mm}
 \begin{itemize}
-\item A2 in Physics (A*), Mathematics (A), Chemistry (A), Biology (A) and AS in Further Mathematics (A).
+\item A2 levels: Physics (A*), Mathematics (A), Chemistry (A) and Biology (A).
+\item AS levels: Further Mathematics (A).
 \end{itemize} 
 
-\textbf{GCSEs}, Lacon Childe High School \hfill Sep 2007 -- Jun 2012\\
+\textbf{GCSEs}, Lacon Childe School \hfill Sep 2007 -- Jun 2012\\
 \vspace{-5mm}
 \begin{itemize}
-\item Nine GCSE's including English language and German and level 2 certificates in iMedia Computing and BTEC Sport.
+\item Eleven level 2 awards including GCSEs in English language and German.
 \end{itemize} 
- 
- \section*{Employment}
-{\bf Teaching Assistant}, University of Southampton \hspace{\fill} Oct 2018 -- Jan 2022 \\
-\vspace{-5mm}
-\begin{itemize}
-\item Running undergraduate problem classes and helping with assessment.
-\end{itemize}
 
- \section*{Computing}
+ {\color{Sectioncolour}
+\section*{Computing}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
  \begin{itemize}
 \item Extensive experience with \texttt{Mathematica} including tensor algebra, data analysis and graphics. 
 \item Extensive experience with \texttt{C++} including numerical calculation and data analysis.
 \item Extensive experience with \texttt{Python} including data analysis and graphics. 
 \item Extensive experience with \LaTeX.
-\item Contributor of scatter orbits to the KerrGeodesics package of the Black Hole Perturbation Toolkit (\href{http://bhptoolkit.org/}{bhptoolkit.org}).
+\item Contributor of scatter orbits to the KerrGeodesics package of the Black Hole Perturbation Toolkit. \href{http://bhptoolkit.org/}{\faIcon{link}}
 \end{itemize}
  
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS/PRESENTATIONS SECTION
 %----------------------------------------------------------------------------------------
 
+{\color{Sectioncolour}
 \section*{Publications}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 \begin{itemize}
-\item \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.024014}{O. Long \& L. Barack. Time-domain metric reconstruction for hyperbolic scattering. {\it Phys.\ Rev.\ D}, 104(2), July 2021.}
+\item O. Long \& L. Barack. Time-domain metric reconstruction for hyperbolic scattering. {\it Phys.\ Rev.\ D}, 104(024014), July 2021. \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.024014}{\faIcon{link}}
 \item O. Long. Self-force correction to the scatter angle of a scalar charge in Schwarzschild spacetime (in preparation).
 \end{itemize} 
 
-\pagebreak\moveleft.5\hoffset\centerline{\Large\bf Oliver Long} % Your name at the top
- 
-\noindent\rule{\linewidth}{0.6pt}
- 
- \section*{Conference presentations}
+%----------------------------------------------------------------------------------------
+%	PRIZES SECTION
+%----------------------------------------------------------------------------------------
+
+{\color{Sectioncolour}
+\section*{Prizes}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 \begin{itemize}
-\item ``Self-force in hyperbolic binary-black-hole encounters", BritGrav22, University of Glasgow via Zoom, 4th -- 5th April 2022.
-\item \href{https://pirsa.org/21060058}{``Time-domain metric reconstruction for hyperbolic scattering", 24th Capra Meeting on Radiation Reaction in General Relativity, Perimeter Institute via Zoom, 7th -- 11th June 2021.}
+\item EPSRC Doctoral Prize, Engineering and Physical Sciences Research Council. \hfill 2022
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATIONS SECTION
+%----------------------------------------------------------------------------------------
+ 
+ {\color{Sectioncolour}
+\section*{Conference presentations}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
+\begin{itemize}
+\item ``Self-force in hyperbolic binary-black-hole encounters", BritGrav22, University of Glasgow via Zoom, \\ 4th -- 5th April 2022. \href{https://www.youtube.com/watch?v=zZEblkjb5IM}{\faIcon{link}}
+\item ``Time-domain metric reconstruction for hyperbolic scattering", 24th Capra Meeting on Radiation Reaction in General Relativity, Perimeter Institute via Zoom, 7th -- 11th June 2021. \href{https://pirsa.org/21060058}{\faIcon{link}}
 \item ``Towards a self-force calculation of the scatter angle in hyperbolic encounters", BritGrav21, University College Dublin via Zoom, 12th -- 16th April 2021.
-\item \href{https://lisasymposium13.lisamission.org/presentations/i0xMnRFWi7WKbO5f01caGDH0zPK2/7qz7uYC3qHuzj9AsC49h}{``Towards a self-force calculation of the scatter angle in hyperbolic encounters", 13th LISA Symposium, 1st -- 3rd October 2020.}
-\item \href{https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=11311s}{``Towards a self-force calculation of the scatter angle in hyperbolic encounters", 23rd Capra Meeting on Radiation Reaction in General Relativity, University of Texas at Austin via Zoom, 22nd -- 26th June 2020.}
+\item``Towards a self-force calculation of the scatter angle in hyperbolic encounters", 13th LISA Symposium, 1st -- 3rd October 2020. \href{https://lisasymposium13.lisamission.org/presentations/i0xMnRFWi7WKbO5f01caGDH0zPK2/7qz7uYC3qHuzj9AsC49h}{\faIcon{link}}
+\item ``Towards a self-force calculation of the scatter angle in hyperbolic encounters", 23rd Capra Meeting on Radiation Reaction in General Relativity, University of Texas at Austin via Zoom, 22nd -- 26th June 2020. \href{https://www.youtube.com/watch?v=HB-Rw5kRUfg&t=11311s}{\faIcon{link}}
 \end{itemize} 
  
+{\color{Sectioncolour}
 \section*{Conference posters}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 \begin{itemize}
 \item ``Time-domain metric reconstruction using the Hertz potential", 3rd meeting of the GWVerse COST action, Institute for Fundamental Physics of the Universe, International School for Advanced Studies, 13th -- 16th January 2020.
 \end{itemize} 
@@ -124,7 +172,10 @@
 %	EVENTS ATTENDED SECTION
 %----------------------------------------------------------------------------------------
  
+{\color{Sectioncolour}
 \section*{Other events attended}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 \begin{itemize}
 \item Advances and Challenges in Computational Relativity Workshop (Online), The Institute for Computational and Experimental Research in Mathemtatics, Brown University, 14th -- 18th September 2020.
 \item Black Hole Perturbation Toolkit Workshop (Online), Astronomical Institute of the Academy of Sciences of the Czech Republic, 25th -- 27th May 2020.
@@ -136,7 +187,10 @@
 \item Black Hole Perturbation Toolkit Workshop, University College Dublin, 19th -- 21st March 2019.
 \end{itemize} 
 
+{\color{Sectioncolour}
 \section*{LISA Consortium}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 \begin{itemize}
 \item Full member of the LISA Consortium since October 2018.
 \item Member of the Waveform Working Group and LISA Early Career Scientists (LECS).
@@ -144,7 +198,10 @@
 \end{itemize} 
 
 %Name referees
+{\color{Sectioncolour}
 \section*{References}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 Available upon request.
 %\begin{itemize}
 %\item Prof.\ L.\ Barack; PhD supervisor; University of Southampton; \href{mailto:L.Barack@soton.ac.uk}{L.Barack@soton.ac.uk}.
@@ -152,8 +209,5 @@ Available upon request.
 %\item Prof.\ B.\ Wardell; Research colleague; University College Dublin; \href{mailto:barry.wardell@ucd.ie}{barry.wardell@ucd.ie}.
 %\item Dr.\ E.\ Di Valentino; MPhys project supervisor; University of Sheffield; e.divalentino@sheffield.ac.uk.
 %\end{itemize}
-
-\vspace*{\fill}
-Updated \today.
 
 \end{document}  
