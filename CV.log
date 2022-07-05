@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.6)  31 MAY 2022 08:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.6)  5 JUL 2022 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,17 +876,12 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 154--156
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 166--168
+Overfull \hbox (30.0pt too wide) in paragraph at lines 168--170
 [][] 
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 178--180
-[][] 
- []
-
-
-Overfull \hbox (30.0pt too wide) in paragraph at lines 193--195
+Overfull \hbox (30.0pt too wide) in paragraph at lines 180--182
 [][] 
  []
 
@@ -902,19 +897,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.213 \end{document}
-                     [2] (./CV.aux)
+l.193 \newpage
+               [2]
+Overfull \hbox (30.0pt too wide) in paragraph at lines 198--200
+[][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 \end{document}
+                     [3] (./CV.aux)
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23948 strings out of 478994
- 449797 string characters out of 5858185
+ 23950 strings out of 478994
+ 449813 string characters out of 5858185
  721596 words of memory out of 5000000
- 41033 multiletter control sequences out of 15000+600000
+ 41035 multiletter control sequences out of 15000+600000
  409332 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,103p,1191b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,11n,103p,1191b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc
 }{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc
@@ -931,10 +944,10 @@ e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 blic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1000.pfb>
-Output written on CV.pdf (2 pages, 127560 bytes).
+Output written on CV.pdf (3 pages, 130543 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
