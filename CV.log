@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.6)  2 AUG 2022 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.27)  11 AUG 2022 15:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -827,36 +827,31 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 60--61
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 77--78
+Overfull \hbox (30.0pt too wide) in paragraph at lines 83--84
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (30.0pt too wide) in paragraph at lines 113--115
+Overfull \hbox (30.0pt too wide) in paragraph at lines 119--121
 [][] 
  []
 
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 119.
+nput line 125.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 )
-Overfull \hbox (30.0pt too wide) in paragraph at lines 129--131
-[][] 
- []
-
-
-Overfull \hbox (30.0pt too wide) in paragraph at lines 142--144
+Overfull \hbox (30.0pt too wide) in paragraph at lines 135--137
 [][] 
  []
 
@@ -871,35 +866,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (30.0pt too wide) in paragraph at lines 154--156
+Overfull \hbox (30.0pt too wide) in paragraph at lines 148--150
 [][] 
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 169--171
+Overfull \hbox (30.0pt too wide) in paragraph at lines 160--162
 [][] 
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 181--183
+Overfull \hbox (30.0pt too wide) in paragraph at lines 175--177
 [][] 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 18.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.194 \newpage
-               [2]
-Overfull \hbox (30.0pt too wide) in paragraph at lines 199--201
+Overfull \hbox (30.0pt too wide) in paragraph at lines 187--189
 [][] 
  []
 
@@ -915,19 +897,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.219 \end{document}
+l.197 \item B
+             ritGrav19, Durham University, 15th -- 16th April 2019. [2]
+Overfull \hbox (30.0pt too wide) in paragraph at lines 204--206
+[][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 18.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-6.0pt}.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 \end{document}
                      [3] (./CV.aux)
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  23950 strings out of 478994
- 449813 string characters out of 5858185
- 721596 words of memory out of 5000000
+ 449813 string characters out of 5858184
+ 722596 words of memory out of 5000000
  41035 multiletter control sequences out of 15000+600000
  409332 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,103p,1191b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,11n,103p,1191b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc
 }{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc
@@ -944,7 +944,7 @@ e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 blic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1000.pfb>
-Output written on CV.pdf (3 pages, 131268 bytes).
+Output written on CV.pdf (3 pages, 131874 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
