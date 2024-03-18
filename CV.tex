@@ -29,8 +29,15 @@
 \renewcommand{\headrule}{\color{Sectioncolour}\oldheadrule}% Add colour to \headrule
 \renewcommand{\headrulewidth}{0.8pt}
 
+\usepackage[backend=bibtex,
+style=ieee,
+sorting=ydnt,
+citestyle=numeric-comp
+]{biblatex}
+\addbibresource{bib}
+
 \chead{\color{Sectioncolour} \Large\bf Oliver Long}
-\lfoot{Updated \today.}
+%\lfoot{Updated \today.}
 
 \begin{document}
  
@@ -51,117 +58,151 @@
  \vspace{1mm}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	RESEARCH SECTION
 %----------------------------------------------------------------------------------------
 
 {\color{Sectioncolour}
-\section*{Academic positions}
+\section*{Research experience}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
 
-\textbf{Max Planck Institute for Gravitational Physics (Albert Einstein Institute) Potsdam} \\
-\vspace{-5mm}
+\textbf{Postdoctoral Researcher}, Max Planck Institute for Gravitational Physics \hfill Nov 2022 --\\ \vspace{-5mm}
 \begin{itemize}
-\item Postdoctoral Researcher \hfill Nov 2022 -- Present
+\item Used numerical data to perform a resummation of weak-field expansions of the scattering angle due to a point-particle source to extend their validity into the strong-field regime \cite{SFPM:prep}.
+\item Extended the Spectral Einstein Code (SpEC) to be capable of handling more extreme parameters leading to the first known Numerical Relativity calculations of hyperbolic encounters between two black holes of unequal mass \cite{NREOB:prep}.
+\item Extended the pySEOBNR code to be able to calculate hyperbolic binary black hole encounters \cite{NREOB:prep}.
 \end{itemize}
-Modelling of hyperbolic orbits of binary black holes using Effective One-Body, Numerical Relativity and self-force methods.
 
-\textbf{University of Southampton} \\
+\textbf{Doctoral Prize Research Fellow}, University of Southampton \hfill Jun 2022 -- Oct 2022\\ 
 \vspace{-5mm}
 \begin{itemize}
-\item Doctoral Prize Research Fellow \hfill Aug 2022 -- Oct 2022
-\item Doctoral Prize Senior Research Assistant \hfill Jun 2022 -- Jul 2022
-\item Research Assistant \hfill Jan 2022 -- Mar 2022
+\item Used numerical data to extract high-order weak-field expansions of the scattering angle due to a point-particle source \cite{Barack:2023oqp}.
 \end{itemize}
-Modelling of hyperbolic orbits of binary black holes with back-reaction in the extreme-mass-ratio limit using perturbation theory focusing on calculating the scalar self-force correction to the scatter angle as well as calculating the scatter angle to first-order in the mass ratio.
+
+\textbf{Ph.D.\ Student}, University of Southampton \hfill Sep 2018 -- May 2022\\ 
+\vspace{-5mm}
+\begin{itemize}
+\item Developed and implemented a numerical method for calculating perturbations due to a point-particle source in black hole perturbation theory \cite{Barack:2022pde,Long:2021ufh}.
+\item Performed the first-ever calculation of the post-geodesic correction to the scattering angle of a point-particle in a black hole spacetime \cite{Barack:2022pde}.
+\item Derived analytic formulae for scattering geodesics in a black hole spacetime \cite{Long:2021ufh}. Implemented the formulae in the KerrGeodesics package of the Black Hole Perturbation Toolkit \cite{BHPT:prep}.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+{\color{Sectioncolour}
+\section*{Teaching experience}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
+
+\textbf{Postgraduate Student Demonstrator}, University of Southampton \hfill Sep 2018 -- Jan 2022\\ \vspace{-5mm}
+\begin{itemize}
+\item Numerical Methods in Python: Run workshops based on problem sheets and coursework.
+\item Maths for Physicists: Run classes demonstrating mathematical techniques and coursework marking.
+\item Maths for Engineers: Run drop-in workshops, marking of exams, and exam writing.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
 {\color{Sectioncolour}
 \section*{Education}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
 
-\textbf{Ph.D. in Mathematical Sciences}, University of Southampton \hfill Sep 2018 -- Jun 2022 \\
+\textbf{Ph.D.\ in Mathematical Sciences}, University of Southampton \hfill Sep 2018 -- Apr 2022 \\
 \vspace{-5mm}
 \begin{itemize}
-\item Project title: Self-force in hyperbolic black hole encounters.
-\item Supervisor: Prof.\ Leor Barack.
-\item Project: Modelling of hyperbolic orbits of binary black holes with back-reaction in the extreme-mass-ratio limit using perturbation theory focusing on the derivation and development of a model to calculate the self-force correction to the scatter angle.
-\item Teaching: Running of undergraduate problem classes and helping with assessment.
+\item Thesis title: Self-force in hyperbolic black hole encounters.
+\item Advisor: Prof. Leor Barack
 \end{itemize}
-
 \textbf{MPhys in Physics}, The University of Manchester \hfill Sep 2014 -- Jun 2018 \\
 \vspace{-5mm}
 \begin{itemize}
-\item Final degree grade: First-class honours with an average of $80.4\%$.
-\item Modules: Gravitation, The Early Universe, Quantum Field Theory,  Electrodynamics, etc.
-\item Master's project: Using Markov chain Monte Carlo methods on power spectra of the cosmic microwave background to resolve various tensions in the data through the use of different cosmological models.
-\end{itemize} 
-
-\textbf{A levels}, Hereford Sixth Form College \hfill Sep 2012 -- Jun 2014 \\
-\vspace{-5mm}
-\begin{itemize}
-\item A2 levels: Physics (A*), Mathematics (A), Chemistry (A) and Biology (A).
-\item AS levels: Further Mathematics (A).
-\end{itemize} 
-
-\textbf{GCSEs}, Lacon Childe School \hfill Sep 2007 -- Jun 2012\\
-\vspace{-5mm}
-\begin{itemize}
-\item Eleven level 2 awards including GCSEs in English language and German.
-\end{itemize} 
-
- {\color{Sectioncolour}
-\section*{Computing}
-\vspace{-3mm}
-\noindent\rule{\linewidth}{0.6pt}}
- \begin{itemize}
-\item Extensive experience with \texttt{Mathematica} including tensor algebra, data analysis and graphics. 
-\item Extensive experience with \texttt{C++} including numerical calculations and data analysis.
-\item Extensive experience with \texttt{Python} including data analysis and graphics. 
-\item Extensive experience with Git.
-\item Extensive experience with \LaTeX.
+\item Project title: Constraints on the neutrino sector using current and future cosmological data.
+\item Advisor: Dr Eleonora Di Valentino
 \end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	CODES SECTION
+%----------------------------------------------------------------------------------------
+
+% {\color{Sectioncolour}
+%\section*{Code contributions}
+%\vspace{-3mm}
+%\noindent\rule{\linewidth}{0.6pt}}
+%
+%\textbf{Time Domain Scalar Self-Force} \hfill \texttt{C++} and \texttt{Mathematica} \\
+%\vspace{-5mm}
+% \begin{itemize}
+%\item Numerical solving of the Klein-Gordon equation for a point particle source on generic orbits.
+%\item Designed and implemented by myself.
+%\end{itemize}
+%
+%\textbf{Spectral Einstein Code} (SpEC) \hfill \texttt{C++}, \texttt{Perl}, and \texttt{Python} \\
+%\vspace{-5mm}
+% \begin{itemize}
+%\item Numerical solving of the Einstein field equations for binary systems.
+%\item Contributions include adaptive mesh refinement for hyperbolic orbits and diagnostic tools.
+%\item Part of the Simulating Extreme Spacetimes (SXS) collection of codes.
+%\end{itemize}
+%
+%\textbf{pySEOBNR} \hfill  \texttt{Python} and \texttt{Cython}\\
+%\vspace{-5mm}
+% \begin{itemize}
+%\item Numerical solving of binary black hole dynamics using Effective One Body (EOB) methods.
+%\item Contributions include extension of the code to be able to calculate hyperbolic encounters.
+%\end{itemize}
+%
+%\textbf{Kerr Geodesics} \hfill \texttt{Mathematica} \\
+%\vspace{-5mm}
+% \begin{itemize}
+%\item Package to calculate time-like geodesics around a Kerr black hole. 
+%\item Contributions include extension of the package to be able to calculate hyperbolic orbits and unit tests.
+%\item Part of The Black Hole Perturbation Toolkit.
+%\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	PRIZES SECTION
 %----------------------------------------------------------------------------------------
 
 {\color{Sectioncolour}
-\section*{Prizes}
+\section*{Prizes and funding awards}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
+
+\textbf{Doctoral Prize Fellowship}, Engineering and Physical Sciences Research Council. \hfill 2022 \\
+\vspace{-5mm}
 \begin{itemize}
-\item \textbf{Doctoral Prize}, Engineering and Physical Sciences Research Council. \hfill 2022
-\item \textbf{Best Student Talk Runner Up}, 25th Capra Meeting on Radiation Reaction in GR. \hfill Jun 2022 
+\item Grant number: EP/T517859/1
 \end{itemize}
+\textbf{Best Student Talk Runner Up}, 25th Capra Meeting on Radiation Reaction in GR. \hfill Jun 2022 \\
  
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS/PRESENTATIONS SECTION
+%	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
+\newpage
+
 {\color{Sectioncolour}
-\section*{Featured Publications}
+\section*{Publications}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
-\begin{itemize}
-\item L. Barack, Z. Bern, E. Hermann, {\bf O. Long}, {\it et al}. Comparison of post-Minkowskian and self-force expansions: Scattering in a scalar charge toy model. {\it Phys.\ Rev.\ D}, {\bf 108}(024025), Jul 2023. \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.024025}{\faIcon{link}}
-\item L. Barack \& {\bf O. Long}. Self-force correction to the deflection angle in black-hole scattering: A scalar charge toy model. {\it Phys.\ Rev.\ D}, {\bf 106}(104031), Nov 2022. \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.104031}{\faIcon{link}}
-\item {\bf O. Long} \& L. Barack. Time-domain metric reconstruction for hyperbolic scattering. {\it Phys.\ Rev.\ D}, {\bf 104}(024014), Jul 2021. \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.024014}
-{\faIcon{link}}
-\end{itemize} 
+
+\nocite{*}
+
+\vspace{-5mm}
+\printbibliography[notkeyword={prep},title={~}]
 
 {\color{Sectioncolour} 
-\section*{Other publications}
+\section*{Articles in preparation}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
-\begin{itemize}
-\item N. Afshordi, {\it et al} (LISA Consortium Waveform Working Group). Waveform Modelling for the Laser Interferometer Space Antenna. {\it arXiv:2311.01300}. \href{https://arxiv.org/abs/2311.01300}{\faIcon{link}}
-\item L. J. Gomes Da Silva, R. Panosso Macedo, J. E. Thompson,  J. A. Valiente Kroon, {\it et al}. Hyperboloidal discontinuous time-symmetric numerical algorithm with higher order jumps for gravitational self-force computations in the time domain. {\it arXiv:2306.13153}. \href{https://arxiv.org/abs/2306.13153}{\faIcon{link}}
-\item M. Boschini, D. Gerosa, V. Varma, {\it et al}. Extending black-hole remnant surrogate models to extreme mass ratios. {\it Phys.\ Rev.\ D}, {\bf 108}(084015), Oct 2023. \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.084015}{\faIcon{link}}
-\item L. J. Gomes Da Silva, R. Panosso Macedo, {\bf O. Long} \& J. A. Valiente Kroon. Numerical Algorithm for the Computation of the Scalar Self-Force on a Charged Particle on a Schwarzschild background in the Time Domain. ({\it in preparation}).
-\item M. Boyle, K. Chatziioannou, {\it et al}. The SXS Collaboration catalog of binary black hole simulations II. ({\it in preparation}).
-\item N. Warburton, B. Wardell, {\it et al}. The Black Hole Perturbation Toolkit. ({\it in preparation}).
-\end{itemize} 
+
+\vspace{-5mm}
+\printbibliography[keyword={prep},title={~}]
 
 %----------------------------------------------------------------------------------------
 %	PRESENTATIONS SECTION
@@ -172,6 +213,7 @@ Modelling of hyperbolic orbits of binary black holes with back-reaction in the e
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
 \begin{itemize}
+\item ``Comparing numeric and analytic methods for black hole scattering in unequal mass systems", Gravitational Self-Force and Scattering Amplitudes Workshop, The Higgs Centre for Theoretical Physics, 20th March 2024.
 \item``Self-force meets post-Minkowskian in the scattering regime" Gravitational Waves meet Amplitudes in the Southern Hemisphere, International Center for Theoretical Physics South American Institute for Fundamental Research, 24th August 2023.
 \item``Hyperbolic self-force calculations within a hyperboloidal framework" Infinity on a Gridshell, Niels Bohr Institute, 10th July 2023.
 \item``Extraction of high-order post-Minkowskian results from scattering self-force calculations" QCD meets Gravity 2022, Universität Zürich, 13th December 2022.
@@ -185,6 +227,7 @@ Modelling of hyperbolic orbits of binary black holes with back-reaction in the e
 \item ``Comparison of post-Minkowskian and self-force expansions: Scattering in a scalar charge toy model" 26th Capra Meeting on Radiation Reaction in General Relativity, Niels Bohr Institute, 4th July 2023.
 \item``Self-force in hyperbolic black hole encounters" LISA Symposium XIV, 25th -- 29th July 2022. \href{https://www.youtube.com/watch?v=p2-RgYB6Jhk}{\faIcon{link}}
 \item ``Self-force in hyperbolic black hole encounters" 23rd International Conference on General Relativity and Gravitation, Chinese Academy of Science via Zoom, 5th July 2022. \href{https://www.koushare.com/video/videodetail/30159}{\faIcon{link}}
+\newpage
 \item ``Self-force in hyperbolic black hole encounters" 25th Capra Meeting on Radiation Reaction in General Relativity, University College Dublin, 22nd June 2022. \href{https://oliverlong.info/talks/capra25}{\faIcon{link}}
 \item ``Self-force in hyperbolic binary-black-hole encounters" BritGrav22, University of Glasgow via Zoom, \\ 4th April 2022. \href{https://www.youtube.com/watch?v=zZEblkjb5IM}{\faIcon{link}}
 \item ``Time-domain metric reconstruction for hyperbolic scattering" 24th Capra Meeting on Radiation Reaction in General Relativity, Perimeter Institute via Zoom, 10th June 2021. \href{https://pirsa.org/21060058}{\faIcon{link}}
@@ -223,40 +266,53 @@ Modelling of hyperbolic orbits of binary black holes with back-reaction in the e
 \end{itemize} 
 
 %----------------------------------------------------------------------------------------
-%	COLLABORATIONS SECTION
+%	COMPUTING SECTION
 %----------------------------------------------------------------------------------------
 
+ {\color{Sectioncolour}
+\section*{Computing experience}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
+
+\textbf{Advanced}: \texttt{C}/\texttt{C++}, \texttt{Python}, \texttt{Mathematica}, Git, Linux, MacOS, \LaTeX. \vspace{1.5mm} \\ 
+\textbf{Intermediate}: Bash, OpenMP, Slurm, Paraview, Windows. \vspace{1.5mm}\\
+\textbf{Some experience}: \texttt{Perl}, \texttt{Cython}, OpenMPI.
+
+%----------------------------------------------------------------------------------------
+%	COLLABORATIONS SECTION
+%----------------------------------------------------------------------------------------
+\newpage
 {\color{Sectioncolour}
 \section*{Research collaborations}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
-{\bf Laser Interforemeter Space Antenna (LISA) Consortium}  \hfill Oct 2018 -- Present \\
+{\bf Laser Interforemeter Space Antenna (LISA) Consortium}  \hfill Oct 2018 -- \\
 \vspace{-5mm}
 \begin{itemize}
 \item Member of the Waveform Working Group and LISA Early Career Scientists (LECS).
 \end{itemize} 
-{\bf The Black Hole Perturbation Toolkit}  \hfill Mar 2019 -- Present \\
+{\bf The Black Hole Perturbation Toolkit}  \hfill Mar 2019 -- \\
 \vspace{-5mm}
 \begin{itemize}
 \item Contributor to the KerrGeodesics package.
 \end{itemize}
-{\bf Simulating eXtreme Spacetimes (SXS) collaboration}  \hfill Nov 2022 -- Present \\
+{\bf Simulating eXtreme Spacetimes (SXS) collaboration}  \hfill Nov 2022 -- \\
 \vspace{-5mm}
 \begin{itemize}
 \item Contributor to the Spectral Einstein Code (SpEC).
 \end{itemize} 
 {\bf LIGO Scientific Collaboration (LSC)}  \hfill Apr 2023 -- Nov 2023 \\
 \vspace{-5mm}
-%\begin{itemize}
-%\item Contributor to the pySEOBNR code.
-%\end{itemize} 
+\begin{itemize}
+\item Member of the Waveform Working Group.
+\end{itemize} 
 
 %Name referees
-{\color{Sectioncolour}
-\section*{References}
-\vspace{-3mm}
-\noindent\rule{\linewidth}{0.6pt}}
-Available upon request.
+%{\color{Sectioncolour}
+%\section*{References}
+%\vspace{-3mm}
+%\noindent\rule{\linewidth}{0.6pt}}
+%Available upon request.
 %\begin{itemize}
 %\item Prof.\ L.\ Barack; PhD supervisor; University of Southampton; \href{mailto:L.Barack@soton.ac.uk}{L.Barack@soton.ac.uk}.
 %\item Dr.\ A.\ Pound; Secondary PhD supervisor; University of Southampton; \href{mailto:A.Pound@soton.ac.uk}{A.Pound@soton.ac.uk}.
