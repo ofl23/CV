@@ -29,12 +29,20 @@
 \renewcommand{\headrule}{\color{Sectioncolour}\oldheadrule}% Add colour to \headrule
 \renewcommand{\headrulewidth}{0.8pt}
 
-\usepackage[backend=bibtex,
+\usepackage[backend=biber,
 style=ieee,
-sorting=ydnt,
 citestyle=numeric-comp
 ]{biblatex} 
-\addbibresource{bib}
+\DeclareSortingScheme{ydm}{
+  \sort[direction=descending]{\field{presort}}
+  \sort[direction=descending]{\field{sortkey}}
+  \sort[direction=descending]{\field{sortyear}\field{year}}
+  \sort[direction=descending]{\field{month}\field{day}}
+  \sort{\name{sortname}\name{author}\name{editor}\name{translator}}
+  \sort{\field{sorttitle}\field{title}}
+}
+\ExecuteBibliographyOptions{sorting=ydm}
+\addbibresource{bib.bib}
 
 \chead{\color{Sectioncolour} \Large\bf Oliver Long}
 %\lfoot{Updated \today.} 
@@ -83,7 +91,7 @@ citestyle=numeric-comp
 \begin{itemize}
 \item Developed and implemented a numerical method for calculating perturbations due to a point-particle source in black hole perturbation theory \cite{Barack:2022pde,Long:2021ufh}.
 \item Performed the first-ever calculation of the post-geodesic correction to the scattering angle of a point-particle in a black hole spacetime \cite{Barack:2022pde}.
-\item Derived analytic formulae for scattering geodesics in a black hole spacetime \cite{Long:2021ufh}. Implemented the formulae in the KerrGeodesics package of the Black Hole Perturbation Toolkit \cite{BHPT:prep}.
+\item Derived analytic formulae for scattering geodesics in a black hole spacetime \cite{Long:2021ufh}. Implemented the formulae in the KerrGeodesics package of the \href{https://bhptoolkit.org/}{Black Hole Perturbation Toolkit}.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -112,12 +120,12 @@ citestyle=numeric-comp
 \noindent\rule{\linewidth}{0.6pt}}
 
 \textbf{Ph.D.\ in Mathematical Sciences}, University of Southampton \hfill Sep 2018 -- Apr 2022 \\
-\vspace{-5mm}
+\vspace{-5mm} 
 \begin{itemize}
 \item Thesis title: Self-force in hyperbolic black hole encounters.
 \item Advisor: Prof. Leor Barack
 \end{itemize}
-\textbf{MPhys in Physics}, The University of Manchester \hfill Sep 2014 -- Jun 2018 \\
+\textbf{MPhys in Physics}, The University of Manchester \hfill Sep 2014 -- Jun 2018 \\ 
 \vspace{-5mm}
 \begin{itemize}
 \item Project title: Constraints on the neutrino sector using current and future cosmological data.
@@ -173,7 +181,7 @@ citestyle=numeric-comp
 \noindent\rule{\linewidth}{0.6pt}}
 
 \textbf{Seal of Excellence}, European Commission Horizon Europe. \hfill 2025 \\
-\vspace{-5mm}
+\vspace{-5mm} 
 \begin{itemize}
 \item Project proposal: Gravitational Waves from Hyperbolic Encounters (GWHypE).
 \item Recognised as a highly rated proposal for the Marie Skłodowska-Curie Actions Postdoctoral Fellowships.
