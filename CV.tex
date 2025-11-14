@@ -29,20 +29,18 @@
 \renewcommand{\headrule}{\color{Sectioncolour}\oldheadrule}% Add colour to \headrule
 \renewcommand{\headrulewidth}{0.8pt}
 
-\usepackage[backend=biber,
-style=ieee,
-citestyle=numeric-comp
-]{biblatex} 
-\DeclareSortingScheme{ydm}{
-  \sort[direction=descending]{\field{presort}}
-  \sort[direction=descending]{\field{sortkey}}
-  \sort[direction=descending]{\field{sortyear}\field{year}}
-  \sort[direction=descending]{\field{month}\field{day}}
-  \sort{\name{sortname}\name{author}\name{editor}\name{translator}}
-  \sort{\field{sorttitle}\field{title}}
-}
-\ExecuteBibliographyOptions{sorting=ydm}
+\usepackage[
+  backend=biber,
+  style=ieee,
+  citestyle=numeric-comp,
+  sorting=none,        % use citation order (not ydm)
+  defernumbers=true,   % assign numeric labels when bibliographies are printed
+  maxbibnames=20       % show up to 20 authors before truncating with et al.
+]{biblatex}
 \addbibresource{bib.bib}
+% Force bibliography order to follow the order of entries in bib.bib by
+% citing everything up front in that order.
+\nocite{Long:2025tvk,Whittall:2025dqn,Mendes:2025gov,Long:2025nmj,Scheel:2025jct,Abac:2025saz,Long:2024ltn,Barack:2023oqp,DaSilva:2023xif,LISA:2023arg,Boschini:2023ryi,Barack:2022pde,Long:2021ufh}
 
 \chead{\color{Sectioncolour} \Large\bf Oliver Long}
 %\lfoot{Updated \today.} 
@@ -77,8 +75,9 @@ citestyle=numeric-comp
 \textbf{Postdoctoral Researcher}, Max Planck Institute for Gravitational Physics \hfill Nov 2022 --\\ \vspace{-5mm}
 \begin{itemize}
 \item Used numerical data to perform a resummation of weak-field expansions of the scattering angle due to a point-particle source to extend their validity into the strong-field regime \cite{Long:2024ltn}.
-\item Extended the Spectral Einstein Code (\href{https://www.black-holes.org/for-researchers/spec}{\textsc{SpEC}}) to be capable of producing the most accurate simulations of hyperbolic binary black hole encounters to date~\cite{Mendes:2025gov,Long:2025nmj}, some of which have been made publically available~\cite{Scheel:2025jct}
-\item Produced the first simulations of highly asymmetric mass-ratio hyperbolic binary black hole encounters (mass ratio 1:10) and performed the first measurements of disparate scattering angles due to asymmetric gravitational wave emission~\cite{Long:2025nmj}.
+\item Extended the Spectral Einstein Code (\href{https://www.black-holes.org/for-researchers/spec}{\textsc{SpEC}}) to be capable of producing the most accurate simulations of hyperbolic binary black hole encounters to date~\cite{Long:2025nmj,Mendes:2025gov}, some of which have been made publically available~\cite{Scheel:2025jct}
+\item Produced the first numerical relaitivty simulations of highly asymmetric mass-ratio hyperbolic binary black hole encounters (mass ratio 1:10) and performed the first measurements of disparate scattering angles due to asymmetric gravitational wave emission~\cite{Long:2025nmj}.
+\item Used numerical relativity scattering simulations to extract high-order self-force coefficients and cross-validate post-Minkowksian calculations and effective-one-body models~\cite{Long:2025nmj,Long:2025tvk}.
 \end{itemize}
 
 \textbf{Postdoctoral Research Fellow}, University of Southampton \hfill Jun 2022 -- Oct 2022\\ 
@@ -87,12 +86,12 @@ citestyle=numeric-comp
 \item Used numerical data to extract high-order weak-field expansions of the scattering angle due to a point-particle source \cite{Barack:2023oqp}.
 \end{itemize}
 
-\textbf{Ph.D.\ Student}, University of Southampton \hfill Sep 2018 -- May 2022\\ 
+\textbf{Ph.D.\ Student}, University of Southampton \hfill Sep 2018 -- Apr 2022\\ 
 \vspace{-5mm}
 \begin{itemize}
 \item Developed and implemented a numerical method for calculating perturbations due to a point-particle source in black hole perturbation theory \cite{Barack:2022pde,Long:2021ufh}.
 \item Performed the first-ever calculation of the post-geodesic correction to the scattering angle of a point-particle in a black hole spacetime \cite{Barack:2022pde}.
-\item Derived analytic formulae for scattering geodesics in a black hole spacetime \cite{Long:2021ufh}. Implemented the formulae in the KerrGeodesics package of the \href{https://bhptoolkit.org/}{Black Hole Perturbation Toolkit}.
+\item Derived analytic formulae for scattering geodesics in a black hole spacetime \cite{Long:2021ufh} and implemented them in the KerrGeodesics package of the \href{https://bhptoolkit.org/}{Black Hole Perturbation Toolkit}.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -186,22 +185,20 @@ citestyle=numeric-comp
 \newpage
 
 {\color{Sectioncolour}
-\section*{Publications {\rm (total: 12)}}
+\section*{Featured publications}
 \vspace{-3mm}
 \noindent\rule{\linewidth}{0.6pt}}
 
-\nocite{*}
+\vspace{-5mm}
+\printbibliography[keyword={feature},title={~}]
+
+{\color{Sectioncolour}
+\section*{Other publications}
+\vspace{-3mm}
+\noindent\rule{\linewidth}{0.6pt}}
 
 \vspace{-5mm}
-\printbibliography[notkeyword={prep},title={~}]
-
-% {\color{Sectioncolour} 
-% \section*{Articles in preparation {\rm (total: 2)}}
-% \vspace{-3mm}
-% \noindent\rule{\linewidth}{0.6pt}}
-
-% \vspace{-5mm}
-% \printbibliography[keyword={prep},title={~}]
+\printbibliography[notkeyword={feature},title={~}]
 
 
 %----------------------------------------------------------------------------------------
@@ -265,7 +262,7 @@ citestyle=numeric-comp
 %----------------------------------------------------------------------------------------
 %	EVENTS ATTENDED SECTION
 %----------------------------------------------------------------------------------------
- \newpage
+
 {\color{Sectioncolour}
 \section*{Other events attended {\rm (total: 11)}}
 \vspace{-3mm}
